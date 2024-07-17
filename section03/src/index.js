@@ -1,4 +1,4 @@
-const moduleData = require("./math");
+const { add, sub } = require("./math");
 
-console.log(moduleData.add(1, 2));
-console.log(moduleData.sub(1, 2));
+console.log(add(1, 2));
+console.log(sub(1, 2));
