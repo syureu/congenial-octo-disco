@@ -1,1 +1,2 @@
-console.log('안녕 node.js')
+const moduleData = require("./math");
+console.log(moduleData);
