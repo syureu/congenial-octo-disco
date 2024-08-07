@@ -10,7 +10,16 @@ const Main = () => {
   };
 
   if (user.isLogin) {
-    return <div>로그아웃</div>;
+    return (
+      <div
+        style={{
+          backgroundColor: "red",
+          borderBottom: "5px solid blud",
+        }}
+      >
+        로그아웃
+      </div>
+    );
   } else {
     return <div>로그인</div>;
   }
