@@ -9,7 +9,7 @@ const Main = () => {
 
   return (
     // <div></div>
-    <main>
+    <>
       {/* <img> */}
       <img></img>
       <h1>main</h1>
@@ -22,7 +22,7 @@ const Main = () => {
       {null}
       {/* {obj} */}
       {obj.a}
-    </main>
+    </>
   );
 };
 
