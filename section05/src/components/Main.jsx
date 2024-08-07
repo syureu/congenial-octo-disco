@@ -4,7 +4,7 @@ const Main = () => {
   return (
     <main>
       <h1>main</h1>
-      <h2>{number}</h2>
+      <h2>{number + 10}</h2>
     </main>
   );
 };
