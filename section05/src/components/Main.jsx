@@ -3,6 +3,7 @@
 // 2. 숫자, 문자열, 배열 값만 렌더링 된다
 const Main = () => {
   const number = 9;
+  const obj = { a: 1 };
 
   return (
     <main>
@@ -14,6 +15,8 @@ const Main = () => {
       {true}
       {undefined}
       {null}
+      {/* {obj} */}
+      {obj.a}
     </main>
   );
 };
