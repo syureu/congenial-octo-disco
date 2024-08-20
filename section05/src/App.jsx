@@ -4,9 +4,9 @@ import Button from "./components/Button";
 function App() {
   return (
     <>
-      <Button />
-      <Button />
-      <Button />
+      <Button text={"메일"} color={"red"} />
+      <Button text={"카페"} />
+      <Button text={"블로그"} />
     </>
   );
 }
