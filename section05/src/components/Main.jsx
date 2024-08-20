@@ -1,3 +1,5 @@
+import "./Main.css";
+
 // JSX 주의 사항
 // 1. 중괄호 내부에는 자바스크립트 표현식만 넣을 수 있다
 // 2. 숫자, 문자열, 배열 값만 렌더링 된다
@@ -10,16 +12,7 @@ const Main = () => {
   };
 
   if (user.isLogin) {
-    return (
-      <div
-        style={{
-          backgroundColor: "red",
-          borderBottom: "5px solid blud",
-        }}
-      >
-        로그아웃
-      </div>
-    );
+    return <div className="logout">로그아웃</div>;
   } else {
     return <div>로그인</div>;
   }
