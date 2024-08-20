@@ -1,6 +1,11 @@
 const Button = ({ text, color = "black", children }) => {
   return (
-    <button style={{ color: color }}>
+    <button
+      onClick={() => {
+        console.log(text);
+      }}
+      style={{ color: color }}
+    >
       {text} - {color.toUpperCase()}
       {children}
     </button>
