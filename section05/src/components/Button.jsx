@@ -4,7 +4,11 @@ const Button = ({ text, color = "black", children }) => {
   };
 
   return (
-    <button onClick={onClickButton} style={{ color: color }}>
+    <button
+      onClick={onClickButton}
+      onMouseEnter={onClickButton}
+      style={{ color: color }}
+    >
       {text} - {color.toUpperCase()}
       {children}
     </button>
