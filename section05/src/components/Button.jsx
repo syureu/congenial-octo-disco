@@ -1,6 +1,6 @@
 const Button = (props) => {
   console.log(props);
-  return <button>클릭</button>;
+  return <button>{props.text}</button>;
 };
 
 export default Button;
