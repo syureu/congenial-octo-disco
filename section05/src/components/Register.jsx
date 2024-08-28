@@ -29,10 +29,10 @@ const Register = () => {
       </div>
       <div>
         <select value={country} onChange={onChangeCountry}>
-          <option></option>
-          <option>한국</option>
-          <option>미국</option>
-          <option>영국</option>
+          <option value=""></option>
+          <option value="kr">한국</option>
+          <option value="us">미국</option>
+          <option value="uk">영국</option>
         </select>
         {country}
       </div>
