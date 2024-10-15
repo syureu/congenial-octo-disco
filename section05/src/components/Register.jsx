@@ -29,7 +29,7 @@ const Register = () => {
   const onSubmit = () => {
     if (!input.name) {
       // 이름을 입력하는 DOM 요소 포커스
-      console.log(inputRef.current);
+      inputRef.current.focus();
     }
   };
 
