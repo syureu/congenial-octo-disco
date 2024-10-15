@@ -14,8 +14,8 @@ const Register = () => {
     bio: "",
   });
 
-  const refObj = useRef();
-  console.log(refObj);
+  const refObj = useRef(0);
+  console.log(refObj.current);
 
   const onChange = (e) => {
     setInput({
