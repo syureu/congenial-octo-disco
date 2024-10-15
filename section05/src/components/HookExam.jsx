@@ -5,12 +5,18 @@ import { useState } from "react";
 // 2. 조건부로 호출될 수는 없다
 // 3. 나만의 훅(Custom Hook)을 직접 만들 수 있다.
 
-const HookExam = () => {
+function getInput() {
   const [input, setInput] = useState("");
 
   const onChange = (e) => {
     setInput(e.target.value);
   };
+
+  return [input, onChange];
+}
+
+const HookExam = () => {
+  const [input, onChange] = getInput();
 
   return (
     <div>
