@@ -6,8 +6,6 @@ import { useState, useRef } from "react";
 // 3. 국적
 // 4. 자기소개
 
-let count = 0;
-
 const Register = () => {
   const [input, setInput] = useState({
     name: "",
@@ -20,10 +18,8 @@ const Register = () => {
   const inputRef = useRef();
 
   const onChange = (e) => {
-    // countRef.current++;
-    count++;
-    // console.log(countRef.current);
-    console.log(count);
+    countRef.current++;
+    console.log(countRef.current);
     setInput({
       ...input,
       [e.target.name]: e.target.value,
