@@ -15,7 +15,7 @@ const Register = () => {
   });
 
   const refObj = useRef(0);
-  console.log(refObj.current);
+  console.log("register 렌더링");
 
   const onChange = (e) => {
     setInput({
@@ -26,6 +26,15 @@ const Register = () => {
 
   return (
     <div>
+      <button
+        onClick={() => {
+          refObj.current++;
+          console.log(refObj.current);
+        }}
+      >
+        ref + {refObj.current}
+      </button>
+
       <div>
         <input
           name="name"
