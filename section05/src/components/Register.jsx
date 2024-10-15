@@ -14,10 +14,11 @@ const Register = () => {
     bio: "",
   });
 
-  const refObj = useRef(0);
-  console.log("register 렌더링");
+  const countRef = useRef(0);
 
   const onChange = (e) => {
+    countRef.current++;
+    console.log(countRef.current);
     setInput({
       ...input,
       [e.target.name]: e.target.value,
@@ -26,15 +27,6 @@ const Register = () => {
 
   return (
     <div>
-      <button
-        onClick={() => {
-          refObj.current++;
-          console.log(refObj.current);
-        }}
-      >
-        ref + {refObj.current}
-      </button>
-
       <div>
         <input
           name="name"
