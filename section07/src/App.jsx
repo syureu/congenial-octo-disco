@@ -13,6 +13,10 @@ function App() {
   }, []);
 
   // 2. 업데이트 : 변화, 리렌더링
+  useEffect(() => {
+    console.log("update");
+  });
+
   // 3. 언마운트 : 죽음
 
   const onClickButton = (controllNumber) => {
