@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import "./App.css";
 import Viewer from "./components/Viewer";
 import Controller from "./components/Controller";
+import Even from "./components/Even";
 
 function App() {
   let [count, setCount] = useState(0);
@@ -42,6 +43,7 @@ function App() {
       </section>
       <section>
         <Viewer count={count} />
+        {count % 2 === 0 ? <Even /> : null}
       </section>
       <section>
         <Controller onClickButton={onClickButton} />
