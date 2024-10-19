@@ -8,6 +8,10 @@ function App() {
   let [input, setInput] = useState("");
 
   // 1. 마운트 : 탄생
+  useEffect(() => {
+    console.log("mount");
+  }, []);
+
   // 2. 업데이트 : 변화, 리렌더링
   // 3. 언마운트 : 죽음
 
