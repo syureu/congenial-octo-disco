@@ -7,10 +7,9 @@ function App() {
   let [count, setCount] = useState(0);
   let [input, setInput] = useState("");
 
-  useEffect(() => {
-    console.log(`count: ${count} / input: ${input}`);
-  }, [count, input]);
-  // 의존성 배열 (dependency array), deps
+  // 1. 마운트 : 탄생
+  // 2. 업데이트 : 변화, 리렌더링
+  // 3. 언마운트 : 죽음
 
   const onClickButton = (controllNumber) => {
     setCount(count + controllNumber);
