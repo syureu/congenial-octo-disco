@@ -8,7 +8,7 @@ function App() {
   let [input, setInput] = useState("");
 
   useEffect(() => {
-    console.log(`count: ${count}`);
+    console.log(`count: ${count} / input: ${input}`);
   }, [count, input]);
   // 의존성 배열 (dependency array), deps
 
