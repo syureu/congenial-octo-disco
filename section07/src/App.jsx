@@ -9,7 +9,7 @@ function App() {
 
   useEffect(() => {
     console.log(`count: ${count}`);
-  }, [count]);
+  }, [count, input]);
   // 의존성 배열 (dependency array), deps
 
   const onClickButton = (controllNumber) => {
