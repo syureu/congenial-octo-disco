@@ -5,6 +5,7 @@ import Controller from "./components/Controller";
 
 function App() {
   let [count, setCount] = useState(0);
+  let [input, setInput] = useState("");
 
   useEffect(() => {
     console.log(`count: ${count}`);
@@ -18,6 +19,14 @@ function App() {
   return (
     <div className="App">
       <h1>Simple Counter</h1>
+      <section>
+        <input
+          value={input}
+          onChange={(e) => {
+            setInput(e.target.value);
+          }}
+        />
+      </section>
       <section>
         <Viewer count={count} />
       </section>
