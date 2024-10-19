@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./App.css";
 import Viewer from "./components/Viewer";
 import Controller from "./components/Controller";
@@ -14,8 +14,14 @@ function App() {
 
   // 2. 업데이트 : 변화, 리렌더링
   useEffect(() => {
+    if (!isMount.current) {
+      isMount.current = true;
+      return;
+    }
     console.log("update");
   });
+
+  const isMount = useRef(false);
 
   // 3. 언마운트 : 죽음
 
